@@ -8,7 +8,7 @@ const Chat = () => {
     const sendMessage = (e) => {
         e.preventDefault();
         if (input.trim()) {
-            setMessages([...messages, { text: input, sender: "You" }]);
+            setMessages([...messages, { text: input, sender: "Toi" }]);
             setInput("");
         }
     };
@@ -20,7 +20,7 @@ const Chat = () => {
                 style={{
                     border: "1px solid #ccc",
                     padding: "10px",
-                    height: "300px",
+                    height: "100px",
                     overflowY: "scroll",
                     marginBottom: "10px",
                 }}
@@ -36,11 +36,11 @@ const Chat = () => {
                     type="text"
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
-                    placeholder="Type your message"
+                    placeholder="Votre message"
                     style={{ flex: 1, padding: "10px" }}
                 />
                 <button type="submit" style={{ padding: "10px 20px" }}>
-                    Send
+                    envoyer
                 </button>
             </form>
         </div>
